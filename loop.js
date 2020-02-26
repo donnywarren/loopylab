@@ -1,19 +1,53 @@
 function firstTenNums() {
   // firstTenNums should `console.log()` the numbers
   // from 1 - 10.  Use a `for` loop.
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
 }
 
 function manyEvens() {
+
+  let myArray = [];
+
+  for (let i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+      myArray.push(i);
+    }
+  }
+  return myArray;
   // Return an array that contains all the even numbers between 1 and 100 (inclusive).
   // Use a for loop.
 }
 
 function manyOdds() {
+
+  let myOdds = [];
+  let i = 3;
+
+  while (i <= 103) {
+    if (i % 2 !== 0) {
+      myOdds.push(i);
+    }
+    i++;
+  }
+
+  return myOdds;
+
+
+  // return myOddArray;
   // Return an array that contains all the odd numbers between 3 and 103 (inclusive).
   // Use a while loop.
 }
 
 function arraySum(nums) {
+  let n = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    n = n + nums[i];
+  }
+  return n;
+
   // arraySum(nums) receives an array of numbers as an argument
   // and should return the sum of all the numbers.
   // For example,
