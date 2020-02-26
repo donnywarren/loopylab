@@ -57,10 +57,21 @@ function arraySum(nums) {
 }
 
 function sumToN(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum = sum + i;
+  }
+  return sum;
+
   // Return the sum of all numbers from 1 to n.
 }
 
 function countDown(n) {
+  let myArray = [];
+  myArray.push(n);
+  myArray.push(1);
+  return myArray;
+
   // Return an array of all numbers with n at index 0 and 1 at the last index.
 }
 
