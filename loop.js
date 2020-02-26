@@ -76,6 +76,10 @@ function countDown(n) {
 }
 
 function factorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
   // compute the factorial of n. See https://en.wikipedia.org/wiki/Factorial.
 }
 
